@@ -138,7 +138,7 @@ function processaCadastroUsuario(requisicao, resposta) {
 
 
 //indicando para a aplicação como servir arquivos estáticos localizados na pasta 'paginas'
-app.use(express.static(path.join(process.cwd(),'paginas')));
+app.use(express.static(path.join(process.cwd(),'Paginas')));
 
 app.get('/', (requisicao, resposta) => {
     resposta.end(`
